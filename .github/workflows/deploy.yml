@@ -33,7 +33,7 @@ jobs:
       - name: Build
         env:
           VITE_API_URL: ${{ secrets.VITE_API_URL }}
-          VITE_BASE_PATH: /mern-portfolio/   # must match this repo's name
+          VITE_BASE_PATH: /portfolio-frontend/   # must match this repo's name
         run: npm run build
 
       - name: Upload build artifact
